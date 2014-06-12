@@ -25,7 +25,15 @@ describe '#fizz_buzz' do
   end
 
   it 'replace 3 with fizz' do
-    expect(fizz_buzz).to eq [1, 2, 'fizz']
+    expect(fizz_buzz 3).to eq [1, 2, 'Fizz']
+  end
+
+  it 'replace 5 with fizz' do
+    expect(fizz_buzz 5).to eq [1, 2, 'Fizz', 4, 'Buzz']
+  end
+
+  it 'replace 15 with fizz' do
+    expect(fizz_buzz 15).to eq [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz' ]
   end
 
 end
