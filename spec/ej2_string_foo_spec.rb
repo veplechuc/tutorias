@@ -17,12 +17,4 @@ describe '#string_foo' do
     expect(String.new.foo).to eq "foo"
   end
 
-  it 'works with ANYTHING!!!' do
-    expect(String.new.conquer_the_world).to eq "conquer_the_world"
-  end
-
-  it 'with ANYTHING!!! (do not hard-code that)' do
-    expect(String.new.the_world).to eq "the_world"
-  end
-
 end
